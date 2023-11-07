@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import "../assets/styles/sass/courseware.scss";
 
 function Courseware() {
@@ -34,3 +35,13 @@ function Courseware() {
 }
 
 export default Courseware;
+=======
+function Courseware() {
+    return (
+        <>
+        </>
+    )
+}
+
+export default Courseware
+>>>>>>> aa0483d09dffae0fd8781173c23317cb21daa8d2
