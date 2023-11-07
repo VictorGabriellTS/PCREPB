@@ -1,0 +1,126 @@
+.strip {
+    background-color: #EBC817;
+    padding: 1.5px;
+}
+.header {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    background-color: #fff;
+
+    .logo svg {
+        width: 55px;
+        height: 55px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+
+        .burger_menu_btn {
+            border: none;
+            background-color: transparent;
+            padding: 2px;
+            cursor: pointer;
+
+            svg {
+                width: 60px;
+                height: 60px;
+
+                path {
+                    transition: all 200ms;
+                }
+            }
+        }
+
+        .burger_menu_btn:hover {
+            svg path {
+                fill: #EBC817;
+            }
+        }
+
+        .menu_links_box {
+            background-color: #fff;
+            list-style: none;
+            position: absolute;
+            right: 0;
+            top: -357px;
+            width: 280px;
+            height: 357px;
+            transition: all 200ms;
+
+            li a {
+                display: inline-block;
+                padding: 20px;
+                font-size: 26px;
+                width: 100%;
+                transition: all 200ms;
+                border-radius: 0;
+            }
+
+            li a:hover {
+                background-color: #EBC817;
+            }
+        }
+
+        @keyframes show_menu {
+            from {
+                top: -357px;
+            }
+            to {
+                top: 91px;
+            }
+        }
+
+        @keyframes hidden_menu {
+            from {
+                top: 91px;
+            }
+            to {
+                top: -357px;
+            }
+        }
+        .show_menu {
+            animation: show_menu 200ms 200ms 1 linear forwards;
+        }
+
+        .hidden_menu {
+            animation: hidden_menu 200ms 200ms 1 linear forwards;
+        }
+    }
+}
+
+@media(min-width: 769px) {
+    .header {
+        padding: 10px 90px;
+
+        .menu {
+
+            .burger_menu_btn {
+                display: none;
+            }
+
+            .menu_links_box {
+                position: relative;
+                top: initial;
+                right: inherit;
+                display: flex;
+                width: max-content;
+                height: max-content;
+                gap: 40px;
+
+                li a {
+                    padding: 4px;
+                    font-size: 20px;
+                }
+
+                li a:hover {
+                    background-color: initial;
+                    color: #EBC817;
+                }
+            }
+        }
+    }
+}

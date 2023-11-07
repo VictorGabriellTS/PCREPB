@@ -1,0 +1,30 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    box-sizing: border-box;
+    font-family: "Inter";
+    text-decoration: none;
+    color: #000;
+}
+
+*::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #000;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #ebc817;
+    border-radius: 32px;
+}
+
+.pcrepb_icon {
+    width: 40px;
+    height: 40px;
+}
