@@ -1,0 +1,84 @@
+.banners {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: #000;
+
+    .md_banner {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        height: 300px;
+
+        p {
+            text-align: center;
+            color: #fff;
+            font-size: 24px;
+        }
+
+        .cta_btn {
+            border: none;
+            background-color: transparent;
+            border-radius: 32px;
+            transition: all 200ms;
+
+            a {
+                padding: 20px;
+                background-color: #ebc817;
+                border-radius: 32px;
+                font-weight: bold;
+                box-shadow: 0 5px 15px #ebc8179a;
+                transition: all 200ms;
+            }
+        }
+
+        button:hover {
+            scale: 1.1;
+
+            a {
+                box-shadow: 2px 10px 20px #ebc8179a;
+            }
+        }
+    }
+
+    .fig_pub {
+        background-image: linear-gradient(#00000049, #00000049),
+            url(../../images/fp.jpg);
+        background-size: cover;
+    }
+
+    .lit {
+        background-image: linear-gradient(#00000049, #00000049),
+            url(../../images/literatura.jpg);
+        background-size: cover;
+        background-position: -80px 0;
+    }
+
+    .videos {
+        background-image: linear-gradient(#00000049, #00000049),
+            url(../../images/videos.jpg);
+        background-size: cover;
+        background-position: -80px 0;
+    }
+}
+
+@media (min-width: 769px) {
+    .banners {
+        gap: 20px;
+    
+        .md_banner {
+            height: 400px;
+        }
+
+        .lit {
+            background-position: 0 -200px;
+        }
+
+        .videos {
+            background-position: 0 -130px;
+        }
+    }
+}

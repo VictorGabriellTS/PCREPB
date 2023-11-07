@@ -1,0 +1,22 @@
+.banner {
+    background-color: #EBC817;
+    padding: 20px;
+    height: 450px;
+    margin-bottom: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        font-size: 26px;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+@media(min-width: 769px) {
+    .banner {
+        margin-bottom: 61px;
+        padding: 20px 90px;
+    }
+}

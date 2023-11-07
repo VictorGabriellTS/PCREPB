@@ -1,0 +1,130 @@
+.footer {
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
+    background-color: #000;
+    margin-top: 60px;
+    padding-top: 1px;
+
+    .content {
+        margin: 20px;
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            p {
+                color: #fff;
+                width: 140px;
+            }
+
+            .icon {
+                display: flex;
+                align-items: center;
+
+                p {
+                    font-weight: bold;
+                }
+
+                svg {
+                    width: 60px;
+                    height: 60px;
+
+                    path {
+                        fill: #fff;
+                    }
+                }
+            }
+        }
+
+        .infos {
+            display: flex;
+            align-items: center;
+            gap: 120px;
+            justify-content: space-between;
+
+            ul {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                
+                li a {
+                    color: #fff;
+                    transition: all 200ms;
+                    padding: 2px;
+                }
+    
+                li a:hover {
+                    color: #EBC817;
+                }
+            }
+            
+            .social {
+                display: none;
+                gap: 30px;
+
+                li p {
+                    width: 300px;
+                    color: #fff;
+                }
+
+                li .social_medias {
+                    display: flex;
+                    flex-direction: row;
+                    list-style: none;
+                }
+            }
+        }
+    }
+
+    .rights {
+        margin-top: 30px;
+        border-top: 1px solid #fff;
+        padding-top: 10px;
+
+        p {
+            color: #fff;
+            text-align: center;
+        }
+    }
+}
+
+@media(min-width: 769px) {
+    .footer {
+        .content {
+            margin: 30px 90px;
+        
+            .logo {
+                flex-direction: row-reverse;
+                gap: 30px;
+                align-items: center;
+
+                .icon {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                
+                    svg {
+                        width: 70px;
+                        height: 70px;
+                    }
+
+                    p {
+                        font-size: 24px;
+                        width: max-content;
+                    }
+                }
+            }
+
+            .infos {
+                .social {
+                    display: flex;
+                }
+            }
+        }
+    }
+}
