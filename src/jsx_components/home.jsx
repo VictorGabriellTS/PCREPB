@@ -4,27 +4,27 @@ import ZumbiDosPalmares from "../assets/images/zumbipalmares.jpg";
 import MusicasAfro from "../assets/images/musicasafro.jpg";
 import Cultura from "../assets/images/culturaafro.jpg";
 import Jogos from "../assets/images/jogosafro.jpg";
-import Djamila from "../assets/images/djamila.png"
+import Djamila from "../assets/images/djamila.png";
 
 function Home() {
     let ZP = { ZumbiDosPalmares };
     const card1 = {
-        url: "#",
+        url: "Cultura",
         alt: "Imagem sobre a cultura afro-brasileira",
         desc: "Conheca mais sobre essa vasta cultura",
     };
     const card2 = {
-        url: "#",
+        url: "Cultura",
         alt: "Image sobre jogos sobre a cultura afro-brasileira",
         desc: "Veja alguns jogos sobre a cultura afro-brasileira",
     };
     const card3 = {
-        url: "#",
+        url: "Cultura",
         alt: "Zumbi dos Palmares",
         desc: "Conhece mais sobre algumas figuras históricas",
     };
     const card4 = {
-        url: "#",
+        url: "Cultura",
         alt: "Imagem de musicas Afro-Brasileira",
         desc: "Escute as mais divesas musicas da cultura afro-brasileira",
     };
