@@ -15,6 +15,12 @@ function App() {
                     <Route path="/Material_Didático" element={<Courseware />} />
                     <Route path="/Ajuda" element={<ComingSoon />} />
                     <Route path="/Junte-se_a_Nós" element={<ComingSoon />} />
+                    <Route path="/PCREPB" element={<Home />} />
+                    <Route path="/PCREPB/Início" element={<Home />} />
+                    <Route path="/PCREPB/Cultura" element={<Culture />} />
+                    <Route path="/PCREPB/Material_Didático" element={<Courseware />} />
+                    <Route path="/PCREPB/Ajuda" element={<ComingSoon />} />
+                    <Route path="/PCREPB/Junte-se_a_Nós" element={<ComingSoon />} />
                 </Routes>
             </BrowserRouter>
         </>
