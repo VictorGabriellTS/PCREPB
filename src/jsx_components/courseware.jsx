@@ -32,3 +32,5 @@ function Courseware() {
         </>
     );
 }
+
+export default Courseware

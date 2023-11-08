@@ -1,7 +1,7 @@
 import Home from "./home.jsx";
 import Culture from "./culture.jsx";
 import Courseware from "./courseware.jsx";
-import ComingSoon from "./coming_soon.jsx"
+import ComingSoon from "./coming_soon.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -14,7 +14,8 @@ function App() {
                     <Route path="/Cultura" element={<Culture />} />
                     <Route path="/Material_Didático" element={<Courseware />} />
                     <Route path="/Ajuda" element={<ComingSoon />} />
-                    <Route path="/Junte-se_a_Nós" element={<ComingSoon />} /></Routes>
+                    <Route path="/Junte-se_a_Nós" element={<ComingSoon />} />
+                </Routes>
             </BrowserRouter>
         </>
     );
